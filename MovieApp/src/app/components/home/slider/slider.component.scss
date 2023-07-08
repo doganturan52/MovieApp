@@ -1,0 +1,35 @@
+.container {
+    width: 60%;
+    background-color: #878f9a4d;
+    border-radius: .2rem;
+    padding: .5rem;
+    border: 1px solid black;
+    min-height: 150px;
+
+    .image-container {
+        margin: 0 .5rem;
+
+        img {
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .top-film-order {
+        border: 1px solid rgb(43, 123, 202);
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        bottom: .5rem;
+        left: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: rgb(245, 84, 25);
+    }
+}

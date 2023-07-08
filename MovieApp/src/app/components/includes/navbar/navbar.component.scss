@@ -1,0 +1,30 @@
+.navbar {
+    font-size: 1.1rem;
+    background-color: #242A32;
+    border-bottom: 1px solid #0296E5;
+
+    .nav-item {
+       margin: 0 2.5rem;
+
+        .nav-link {
+            color: #84858c;
+        }
+        .nav-link:hover {
+            color: #0296E5;
+        }
+        i {
+            margin: 0 1rem;
+        }
+
+    }
+    .form-control {
+        border: none;
+        background-color: #84858c;
+        color: #242A32;
+        box-shadow: none;
+        
+    }
+    .form-control::placeholder {
+        color: #242A32;
+    }
+}

@@ -1,0 +1,19 @@
+.tabs-container {
+    margin-top: 1rem;
+    
+    ul {
+        li.nav-item {
+            margin: auto;
+            text-align: center;
+            width: 150px;
+            
+            a.nav-link {
+                color: rgb(255, 255, 255);
+                font-size: 1.2rem;
+                font-weight: 300;
+                cursor: pointer;
+            };
+        }
+    }
+    
+}

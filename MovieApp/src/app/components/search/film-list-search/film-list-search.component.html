@@ -1,0 +1,23 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-3 p-3 film-search-container" *ngFor="let film of filmService.filteredFilmList">
+            <div class="row">
+                <div class="col-6">
+                    <img src="https://image.tmdb.org/t/p/original//{{ film.poster_path}}" alt="" width="100%">
+                </div>
+                <div class="col-6">
+                    <div class="film-content-body">
+                        <h6>{{film.title }}</h6>
+                        <span style="color: #FF8700;"><i class="fa fa-star" aria-hidden="true"></i> {{ film.vote_average }}</span>
+                        <br>
+                        <i class="fa fa-server" aria-hidden="true"></i> Action
+                        <br>
+                        <i class="fa fa-calendar" aria-hidden="true"></i> 2019
+                        <br>
+                        <i class="fas fa-stopwatch"></i> 139 Min.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

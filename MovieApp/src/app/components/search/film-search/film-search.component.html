@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search films" aria-label="Recipient's username" #searchText
+          (keyup)="search(searchText.value)">
+        <div class="input-group-append">
+          <button class="btn btn-danger input-group-text" id="basic-addon2"><i class="fa fa-search"
+              aria-hidden="true"></i> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

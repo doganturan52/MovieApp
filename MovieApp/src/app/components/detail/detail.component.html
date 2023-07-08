@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+<div class="film-detail-image">
+    <img class="" src="https://image.tmdb.org/t/p/original//{{ film.backdrop_path }}">
+</div>
+
+<div class="container">
+    <div class="film-detail-inner-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="https://image.tmdb.org/t/p/original//{{ film.poster_path }}" alt="">
+            </div>
+            <div class="col-9 film-detail-title">
+                <h1>{{ film.title }}</h1>
+            </div>
+            <div class="col-1 d-flex film-detail-point">
+                <i class="fa fa-star" aria-hidden="true"> 9.5</i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container film-detail-information">
+    <hr>
+    <i class="fa fa-calendar p-3" aria-hidden="true"></i> 2021
+    <i class="fas fa-clock p-3"></i> 148 Min.
+    <i class="fa fa-server p-3" aria-hidden="true"></i> Action
+</div>
+
+<div class="container"> 
+<div class="tabs-container">
+  <ul class="nav justify-content-start nav-underline">
+    <div class="row">
+      <div class="col-md-3">
+        <li class="nav-item">
+          <a class="nav-link">Now Playing</a>
+        </li>
+      </div>
+      <div class="col-md-3">
+        <li class="nav-item">
+          <a class="nav-link">Upcoming</a>
+        </li>
+      </div>
+      <div class="col-md-3">
+        <li class="nav-item">
+          <a class="nav-link">Top Rated</a>
+        </li>
+      </div>
+    </div>
+  </ul>
+</div>
+<hr> 
+</div>
