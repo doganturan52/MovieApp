@@ -15,6 +15,7 @@ import { FilmListComponent } from './components/home/film-list/film-list.compone
 import { FilmSearchComponent } from './components/search/film-search/film-search.component';
 import { FilmListSearchComponent } from './components/search/film-list-search/film-list-search.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WatchListComponent } from './components/watch-list/watch-list.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     FilmListComponent,
     FilmSearchComponent,
     FilmListSearchComponent,
+    WatchListComponent,
   ],
   imports: [
     BrowserModule,

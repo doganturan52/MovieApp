@@ -13,6 +13,7 @@ export class FilmService {
   filmList!: Film[];
   topTenFilmList!: Film[];
   filteredFilmList!: Film[];
+  public watchList: any[] = [];
 
   constructor(private http: HttpClient) {
 
@@ -69,5 +70,31 @@ export class FilmService {
     }).subscribe((filmResponse: FilmResponse) => {
       this.filmList = filmResponse.results;
     })
+  }
+
+  getFilmReviews(filmId: number): void {
+    this.http.get<FilmResponse>(`https://api.themoviedb.org/3/movie/${filmId}/reviews?language=en-US&page=1`, {
+      headers: {
+        Authorization: 'Bearer ' + this.apiKey
+      }
+    }).subscribe((filmResponse: FilmResponse) => {
+      // this.filmList.find()
+    })
+  }
+
+  // Watch List
+  addFilmToWatchList(film: Film) {
+    this.watchList.push(film);
+    console.log("asdasfsaeqwrwq213");
+  }
+
+  deleteFilmToWatchList(film: Film) {
+    const index = this.watchList.findIndex(item => item === film);
+    if (index !== -1) {
+      this.watchList.splice(index, 1);
+      console.log(`"${film}" filmi izleme listesinden silindi.`);
+    } else {
+      console.log(`"${film}" filmi izleme listesinde bulunamadı.`);
+    }
   }
 }
